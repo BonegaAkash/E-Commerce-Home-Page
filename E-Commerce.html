@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens fashion</title>
+    <link rel="stylesheet" href="E-Commerce.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo4.png" width="120px" alt="logo">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" height="45px" alt="cart">
+                <img src="images/i1.png" alt="menu" class="menu" height="68px" onclick="menu()">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1>Welcome To Mens Fashion</h1>
+                    <p>This The Place Where Mens Fashion Products Are Available. <br> Just Relax and Enjoy The Products.
+                    </p>
+                    <a href="" class="btn">Lets Go &rarr;</a>
+                </div>
+                <div class="col">
+                    <img src="images/b3.jpg" alt="fashion img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menu() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
